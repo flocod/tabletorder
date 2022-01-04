@@ -1,0 +1,223 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-wrap: wrap;
+    @media all and (max-width:1122px){
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+       }
+
+
+    .text_block {
+      display: block;
+      text-align: left;
+      width: 40%;
+      @media all and (max-width:1260px){
+       width: 50%;
+      }
+      @media all and (max-width:1122px){
+       width: 100%;
+       margin-top: 30px;
+      }
+
+      .text_detail {
+        display: block;
+        text-align: justify;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font: normal normal normal 16px/23px Poppins;
+        letter-spacing: 0px;
+        color: #747474;
+        @media all and (max-width:574px){
+            font: normal normal normal 12px/16px Poppins;
+            margin-top: 20px;
+            margin-bottom: 20px;
+          }
+      }
+    }
+
+    .image_box {
+      display: block;
+
+      width: 624px;
+      height: 624px;
+      background: $theme;
+      box-shadow: 0px 3px 6px #00000029;
+      border-radius: 50% 50% 0px 50%;
+
+      @media all and (max-width:1260px){
+        width: 460px;
+        height: 460px;
+      }
+      @media all and (max-width:584px){
+        width: 360px;
+        height: 360px;
+      }
+      @media all and (max-width:457px){
+        width: 260px;
+        height: 260px;
+      }
+      @media all and (max-width:377px){
+        width: 160px;
+        height: 160px;
+      }
+
+      .image {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 50% 50% 0px 50%;
+        overflow: hidden;
+        transform: translateX(20px) translateY(-20px);
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  .services {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    margin-top: 80px;
+    @media all and (max-width:1000px){
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .image {
+      display: block;
+      width: 40%;
+      img {
+        width: 100%;
+      }
+    }
+
+    .text_services {
+      display: block;
+      width: 58%;
+      @media all and (max-width:1000px){
+        width: 100%;
+        margin-top: 30px;
+
+    }
+    }
+
+    .service_contain {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 90px;
+      width: 100%;
+      flex-wrap: wrap;
+      @media all and (max-width:1000px){
+     
+        margin-top: 70px;
+    }
+
+    
+
+     
+
+      .service_item {
+        width: 47%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        padding-top: 45px;
+        padding-bottom: 45px;
+        background: $theme;
+        border-radius: 43px;
+        position: relative;
+
+        @media all and (max-width:1229px){
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+
+        @media all and (max-width:626px){
+            width: 100%;
+            margin-bottom: 60px;
+        }
+
+       
+       
+
+        .ico_service {
+          position: absolute;
+          top: 0px;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          width: 116px;
+          height: 116px;
+          background: #f8f8f8 0% 0% no-repeat padding-box;
+          border-radius: 50%;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          font-size: 40px;
+          color: $theme;
+          @media all and (max-width:1229px){
+          font-size: 30px;
+          width: 80px;
+          height: 80px;
+          }
+        }
+
+        .t1 {
+          font: normal normal bold 16px/20px Poppins;
+          color: #f8f8f8;
+          display: inline-block;
+          margin-top: 40px;
+          @media all and (max-width:1229px){
+            font: normal normal normal 14px/18px Poppins;
+        }
+        }
+        .t2 {
+          font: normal normal bold 25px/38px Poppins;
+          color: #f8f8f8;
+          display: inline-block;
+          @media all and (max-width:1229px){
+            font: normal normal 600 20px/30px Poppins;
+        }
+        }
+
+        .desc_service{
+        display: block;
+        text-align: left;
+        width: 80%;
+        font-size: 12px;
+        margin-top: 10px;
+        color: #fafafad2;
+        @media all and (max-width:1229px){
+            font-size: 11px;
+        }
+        }
+
+        .btn_act{
+        margin-top: 20px;
+        border-radius: 14px;
+        width: 80%;
+        }
+
+      }
+    }
+  }
+}
