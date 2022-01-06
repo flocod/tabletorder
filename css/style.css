@@ -225,6 +225,54 @@ a :hover {
   }
 }
 
+.box_add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 55px;
+  background: #248162;
+}
+
+.box_add .val_qte {
+  display: block;
+  width: 40%;
+  text-align: center;
+  height: 100%;
+  border: none;
+  border: 2px solid;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-color: #248162 !important;
+}
+
+.box_add .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  width: 30%;
+  height: 100%;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -435,6 +483,7 @@ a :hover {
   font: normal normal bold 117px/142px Montserrat;
   letter-spacing: 0px;
   color: #f8f8f8;
+  text-align: center;
   display: block;
 }
 
@@ -625,6 +674,7 @@ a :hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 100px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -747,7 +797,6 @@ a :hover {
       -ms-flex-align: end;
           align-items: flex-end;
   width: 100%;
-  margin-top: 80px;
 }
 
 @media all and (max-width: 1000px) {
@@ -1400,6 +1449,24 @@ a :hover {
 .commande .box_commande .form_command .form .flex_input .input_box .btn_file {
   font-size: 12px;
   cursor: pointer;
+}
+
+.commande .box_commande .form_command .form .flex_input .display_prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.commande .box_commande .form_command .form .flex_input .display_prix .TTprix {
+  font-weight: bold;
+  font-size: 14px;
+  font-family: Montserrat;
 }
 
 .commande .box_commande .form_command .form .submit {

@@ -17,11 +17,11 @@ $(document).ready(function () {
 $(document).ready(function () {
   $("body").on("click", ".menu_cancer", function () {
     $(".form_cancer").addClass("active");
-    $(".form_sida").removeClass("active");
+    $(".form_VIH_SIDA").removeClass("active");
   });
-  $("body").on("click", ".menu_sida", function () {
+  $("body").on("click", ".menu_VIH_SIDA", function () {
     $(".form_cancer").removeClass("active");
-    $(".form_sida").addClass("active");
+    $(".form_VIH_SIDA").addClass("active");
   });
 });
 
@@ -36,7 +36,7 @@ function home_writer() {
   });
 
   typewriter
-    .typeString("SIDA")
+    .typeString("VIH SIDA")
     .pauseFor(4000)
     .deleteAll()
     .typeString("CANCER")
@@ -75,5 +75,69 @@ $(document).ready(function () {
     $('body').on('click','.COMMANDER',function(){
         laoding_princ("assets/commande.html", function () {});
     });
+
+});
+
+
+$(document).ready(function () {
+  
+
+
+
+  $("body").on( 'change', '#medoc_input',function () {
+    var str = "";
+    $('.val_qte').val(1);
+    $( "#medoc_input option:selected" ).each(function() {
+      str= $( this ).attr('prix');
+    });
+    $( "#TTprix" ).val( str );
+  })
+  .change();
+
+
+
+
+
+});
+
+$(document).ready(function () {
+  
+  $('body').on('click','.btn_plus',function(){
+    temp="";
+    Total_val="";
+    Total_val=Number($( "#TTprix" ).val());
+
+    if( Total_val!=0){
+      temp=Number($('.val_qte').val())+1;
+      $('.val_qte').val(temp);
+  
+  
+      Total_val= Number($( "#medoc_input option:selected" ).attr('prix')) + Number($( "#TTprix" ).val());
+      $( "#TTprix" ).val(Total_val);
+    }
+
+
+
+    
+
+
+  });
+
+  $('body').on('click','.btn_minus',function(){
+    temp="";
+    temp=Number($('.val_qte').val());
+
+    if(temp>1){
+    $('.val_qte').val(temp-1);
+
+
+    Total_val=Number($( "#TTprix" ).val()) - Number($( "#medoc_input option:selected" ).attr('prix'));
+    $( "#TTprix" ).val(Total_val);
+
+    }
+
+    
+  });
+
 
 });
