@@ -71,7 +71,7 @@ a :hover {
 
 .title_block {
   display: block;
-  color: #248162;
+  color: #3AD289;
 }
 
 .title_block .text1 {
@@ -112,7 +112,7 @@ a :hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #248162;
+  color: #3AD289;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 2px solid white;
@@ -159,6 +159,13 @@ a :hover {
 .space_object {
   margin-top: 90px !important;
   margin-bottom: 100px !important;
+}
+
+@media all and (max-width: 500px) {
+  .space_object {
+    margin-top: 50px !important;
+    margin-bottom: 60px !important;
+  }
 }
 
 .footer {
@@ -237,7 +244,7 @@ a :hover {
           align-items: center;
   width: 100%;
   height: 55px;
-  background: #248162;
+  background: #3AD289;
 }
 
 .box_add .val_qte {
@@ -249,7 +256,7 @@ a :hover {
   border: 2px solid;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-color: #248162 !important;
+  border-color: #3AD289 !important;
 }
 
 .box_add .btn {
@@ -324,7 +331,7 @@ a :hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #248162;
+  color: #3AD289;
 }
 
 .header .struct .info_header .ico {
@@ -399,7 +406,7 @@ a :hover {
 }
 
 .banner {
-  background-color: #248162;
+  background-color: #3AD289;
   background-image: url("https://www.transparenttextures.com/patterns/medic-packaging-foil.png");
   width: 100%;
   height: auto;
@@ -587,7 +594,7 @@ a :hover {
   width: 100%;
   margin-top: 70px;
   height: 350px;
-  background: #248162;
+  background: #3AD289;
   background-image: url("https://www.transparenttextures.com/patterns/medic-packaging-foil.png");
 }
 
@@ -735,7 +742,7 @@ a :hover {
   display: block;
   width: 624px;
   height: 624px;
-  background: #248162;
+  background: #3AD289;
   -webkit-box-shadow: 0px 3px 6px #00000029;
           box-shadow: 0px 3px 6px #00000029;
   border-radius: 50% 50% 0px 50%;
@@ -874,7 +881,7 @@ a :hover {
   height: auto;
   padding-top: 45px;
   padding-bottom: 45px;
-  background: #248162;
+  background: #3AD289;
   border-radius: 43px;
   position: relative;
 }
@@ -913,7 +920,7 @@ a :hover {
   display: -ms-flexbox;
   display: flex;
   font-size: 40px;
-  color: #248162;
+  color: #3AD289;
 }
 
 @media all and (max-width: 1229px) {
@@ -984,6 +991,13 @@ a :hover {
   background-image: url("https://www.transparenttextures.com/patterns/medic-packaging-foil.png");
   padding-top: 150px;
   padding-bottom: 150px;
+}
+
+@media all and (max-width: 500px) {
+  .faq {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .faq .title_block {
@@ -1117,7 +1131,7 @@ a :hover {
           align-items: center;
   height: 100%;
   width: 30%;
-  background: #248162;
+  background: #3AD289;
   font: normal normal bold 26px/32px Montserrat;
   letter-spacing: 0px;
   color: #f8f8f8;
@@ -1277,7 +1291,7 @@ a :hover {
       -ms-flex-align: center;
           align-items: center;
   height: auto;
-  border: 4px solid #288264;
+  border: 4px solid #3AD289;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 46px;
@@ -1289,7 +1303,7 @@ a :hover {
 @media all and (max-width: 675px) {
   .commande .box_commande {
     border-radius: 20px;
-    border: 2px solid #288264;
+    border: 2px solid #3AD289;
   }
 }
 
@@ -1309,7 +1323,7 @@ a :hover {
 .commande .box_commande .menu_commande .menu_commande_item {
   width: 50%;
   height: 100px;
-  background: #248162;
+  background: #3AD289;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -1353,7 +1367,7 @@ a :hover {
 
 .commande .box_commande .menu_commande .active {
   background: #f8f8f8;
-  color: #248162;
+  color: #3AD289;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
@@ -1367,12 +1381,12 @@ a :hover {
           justify-content: center;
   width: 100%;
   position: relative;
-  height: 700px;
+  height: 940px;
 }
 
 @media all and (max-width: 675px) {
   .commande .box_commande .form_command {
-    height: 1000px;
+    height: 1370px;
   }
 }
 
@@ -1465,13 +1479,14 @@ a :hover {
 
 .commande .box_commande .form_command .form .flex_input .display_prix .TTprix {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 20px;
+  color: #3AD289;
   font-family: Montserrat;
 }
 
 .commande .box_commande .form_command .form .submit {
   height: 80px;
-  background: #288264 0% 0% no-repeat padding-box;
+  background: #3AD289 0% 0% no-repeat padding-box;
   border-radius: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
