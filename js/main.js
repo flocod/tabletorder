@@ -59,14 +59,14 @@ function laoding_princ(elt, cb) {
 
 $(document).ready(function () {
   $(".home").on("click", function () {
-    laoding_princ("assets/home.html", function () {
+    laoding_princ("assets/home.php", function () {
       home_writer();
       innerheight = window.innerHeight;
       $(".banner").css("height", innerheight + "px");
     });
   });
   $("body").on("click", ".COMMANDER", function () {
-    laoding_princ("assets/commande.html", function () {});
+    laoding_princ("assets/commande.php", function () {});
   });
 });
 
@@ -79,6 +79,67 @@ $(document).ready(function () {
         str = $(this).attr("prix");
       });
       $("#TTprix").val(str);
+    })
+    .change();
+});
+
+
+
+function validateNumber(number) {
+  var filter =
+    /^([1-9])([0-9]){0,}$/;
+  if (filter.test(number)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+
+
+$(document).ready(function () {
+  $("body")
+    .on("change", ".ville_input", function () {
+      var str = "";
+    
+      $(".ville_input option:selected").each(function () {
+        str = $(this).attr("frais");
+      });
+
+      if(validateNumber(str)){
+        $(".frais_livraison_cancer").each(function(){
+          $(this).text(Number(str));
+        });
+      }else{
+        $(".frais_livraison_cancer").each(function(){
+          $(this).text("0");
+        });
+      }
+
+      
+    })
+    .change();
+});
+$(document).ready(function () {
+  $("body")
+    .on("change", ".ville_input_cancer", function () {
+      var str = "";
+    
+      $(".ville_input_cancer option:selected").each(function () {
+        str = $(this).attr("frais");
+      });
+
+      if(validateNumber(str)){
+        $(".frais_livraison_vih").each(function(){
+          $(this).text(Number(str));
+        });
+      }else{
+        $(".frais_livraison_vih").each(function(){
+          $(this).text("0");
+        });
+      }
+
+      
     })
     .change();
 });
@@ -113,4 +174,14 @@ $(document).ready(function () {
       $("#TTprix").val(Total_val);
     }
   });
+});
+
+
+
+$(document).ready(function () {
+  
+  $('.pop_up').on('click',function(){
+    $(this).fadeOut('slow');
+  })
+
 });

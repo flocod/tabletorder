@@ -75,22 +75,33 @@
             <span class="text2">En 24h/48h</span>
           </span>
         </span>
+
+
+        
+
+
       </div>
     </header>
 
     <div class="container_page FORM_LOG_BOX" style="margin-top:0px">
-
         <div class="form_log flex_center">
             <div class="struct">
                 <div class="titre1">Hi Administrator</div>
                 <div class="titre2">Fill the form to connect
-                    <div style="color: rgb(77, 255, 41);"></div>
+                    <div style="color: rgb(77, 255, 41);">
+                    <?php
+
+                        if(isset($_GET["info"])){
+                          echo $_GET["info"];
+                        }
+
+                    ?>
+                    </div>
                 </div>
 
-
-                <form class="form_connect" action="session.html" >
-                        <input type="tel" name="tel" placeholder="Tel">
-                        <input type="password" name="password" placeholder="password">
+                <form class="form_connect" method="post" action="functions/connexion.php" >
+                        <input type="tel" name="tel" placeholder="Tel" require>
+                        <input type="password" name="pass" placeholder="password" require>
                         <input type="submit" value="Connexion">
                 </form>
 
