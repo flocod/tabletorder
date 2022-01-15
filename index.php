@@ -627,7 +627,7 @@ $_SESSION['tel']=$table_about['tel'];
     <footer class="footer">
       <div class="inner_struct">
         <div class="flex">
-          <img class="logo_footer home" src="images/logo_footer.svg" alt="" />
+          <img class="logo_footer home" src="images/logo_footer.png" alt="" />
 
           <span class="text"
             >copyright TabletOrder 2022 | Tous droits reservés

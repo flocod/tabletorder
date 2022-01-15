@@ -514,7 +514,7 @@
         return $res;
       
       
-}
+      }
 
 
     public static function take_day($date){
@@ -593,7 +593,7 @@
         
           $data=backend::dataB();
 
-          $sql='SELECT * FROM vente';
+          $sql='SELECT * FROM vente ORDER BY `date` desc';
           $query=$data->prepare($sql);
           $query->execute();
         
@@ -1036,9 +1036,7 @@
                    if($resultat){
                       $msgresult="true";
                    }else{
-                    
                     $msg="Erreur durant l'importation du fichier";
-                
                    }
                    
                 }else{

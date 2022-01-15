@@ -21,7 +21,7 @@ html {
 .input_sheme {
   border: none;
   background: #ffffff 0% 0% no-repeat padding-box;
-  border: 1px solid #3ad289;
+  border: 1px solid #067A53;
   border-radius: 12px;
   font-size: 14px;
 }
@@ -54,7 +54,7 @@ html {
           align-items: center;
   width: 255px;
   height: 100%;
-  background: #3ad289 0% 0% no-repeat padding-box;
+  background: #067A53 0% 0% no-repeat padding-box;
   position: fixed;
   left: 0px;
   -webkit-transform: translateX(-100%);
@@ -93,7 +93,7 @@ html {
 
 .container_page .menu_nav .active {
   background-color: #fafafa;
-  color: #3ad289;
+  color: #067A53;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -183,7 +183,7 @@ html {
 .container_page .main_page .struct .dash_stat .box_stat {
   width: 24%;
   height: 121px;
-  background: #3ad289;
+  background: #067A53;
   border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -315,7 +315,7 @@ html {
 .load_more .btn_load_more {
   width: 169px;
   height: 48px;
-  background: #3ad289 0% 0% no-repeat padding-box;
+  background: #067A53 0% 0% no-repeat padding-box;
   border-radius: 13px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -390,7 +390,7 @@ html {
 
 .btn_save {
   width: 100%;
-  background: #3ad289;
+  background: #067A53;
   border-radius: 12px;
   height: 55px;
   color: #fafafa;
@@ -402,13 +402,13 @@ html {
 }
 
 .done {
-  color: #3ad289;
+  color: #067A53;
 }
 
 .confirm {
   cursor: pointer;
   font-weight: bold;
-  color: #3ad289;
+  color: #067A53;
 }
 
 .disable {
@@ -462,7 +462,7 @@ html {
   width: 100%;
   background: #f8f8f8 0% 0% no-repeat padding-box;
   border: none;
-  border: 1px solid #3ad289;
+  border: 1px solid #067A53;
   border-radius: 7px;
   padding-left: 20px;
   margin-bottom: 20px;
@@ -470,7 +470,7 @@ html {
 
 .ville_form .ville_form_item .form_item .struct .btn_sub {
   height: 48px;
-  background: #3ad289 0% 0% no-repeat padding-box;
+  background: #067A53 0% 0% no-repeat padding-box;
   border-radius: 7px;
   width: 100%;
   color: white;
@@ -529,7 +529,7 @@ html {
   display: block;
   height: 100%;
   width: 130px;
-  color: #3ad289;
+  color: #067A53;
   border: none !important;
   font: normal normal normal 14px/21px Poppins;
 }
@@ -572,7 +572,7 @@ html {
 .box_stat_filter .struct .flex .stat_item_box .val {
   display: inline-block;
   margin-right: 12px;
-  color: #3ad289;
+  color: #067A53;
   font: normal normal 600 17px/26px Poppins;
 }
 
@@ -598,7 +598,7 @@ html {
   height: 400px;
   padding-top: 30px;
   padding-bottom: 30px;
-  background: #3ad289;
+  background: #067A53;
   border: 0px solid #707070;
   border-radius: 12px;
 }
@@ -642,7 +642,7 @@ html {
   width: 100%;
   margin-bottom: 10px;
   font: normal normal normal 14px/18px Poppins;
-  color: #3ad289;
+  color: #067A53;
 }
 
 .FORM_LOG_BOX .form_log .struct .form_connect input[type="submit"] {
@@ -665,7 +665,7 @@ html {
 .btn_menu {
   display: inline-block;
   font-size: 24px;
-  color: #3ad289;
+  color: #067A53;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
