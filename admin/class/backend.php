@@ -13,7 +13,8 @@
     // connect to the data base
      public static function dataB(){
 
-        $data=new PDO('mysql:host=localhost;dbname=medic','root','');
+        // $data=new PDO('mysql:host=localhost;dbname=medic','root','');
+        $data=new PDO('mysql:host=localhost;dbname=cancjjsy_cancer_vih','cancjjsy_florian','UjZZwhGVP4juKt!');
          $data->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
          return $data;
     }
